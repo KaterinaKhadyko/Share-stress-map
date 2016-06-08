@@ -1,0 +1,97 @@
+body {
+	font: 14px/14px Arial;
+	color: #222;
+}
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+}
+
+.legend {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+.map-holder {
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.north_america {
+	fill: #56bdc2;
+}
+
+.south_america {
+	fill: #d0c629;
+}
+
+.africa {
+	fill: #3ab54a;
+}
+
+.europe {
+	fill: #f7941d;
+}
+
+.asia {
+	fill: #f25e74;
+}
+
+.oceania {
+	fill: #d0328a;
+}
+
+.buttons-holder {	
+	position: absolute;
+	top: 55px;
+	right: 50px;
+}
+
+.button {
+	display: block;
+	margin-bottom: 10px;
+	background: lightBlue;
+	padding: 5px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 12px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button:hover, button.active {
+	background: #eee;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+rect {
+	cursor: pointer;
+}
+
+rect.legend {
+	cursor: auto;
+}
+
+.underline {
+	stroke: #000;
+	stroke-width: 2;
+	stroke-linecap: round;
+}
+
+.label {
+	font: 12px/12px Arial;
+	font-weight: normal;
+}
