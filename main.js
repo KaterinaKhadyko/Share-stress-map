@@ -38,15 +38,15 @@ function drawMap (data) {
 	var dataset = [
 		{
 			"id": 1,
-			"path": "dataset_1.json"
+			"path": "data/dataset_1.json"
 		},
 		{
 			"id": 2,
-			"path": "dataset_2.json"
+			"path": "data/dataset_2.json"
 		},
 		{
 			"id": 3,
-			"path": "dataset_3.json"
+			"path": "data/dataset_3.json"
 		}
 	];	
 
@@ -179,7 +179,6 @@ function drawMap (data) {
 				return positions[d.key].x + barWidth + barMargin;
 			})
 			.attr("y", function (d) {
-				console.log(d);
 				return positions[d.key].y + y(d.values[0]["share_stress_off"]);
 			});
 
@@ -249,8 +248,6 @@ function drawMap (data) {
 		});	
 
 		function update(dataset) {
-			console.log(dataset);
-
 			var nested = d3.nest()
 			.key(function (d) {
 				return d.continent;
@@ -293,4 +290,4 @@ function drawMap (data) {
 	}
 }
 
-d3.json("world_contitents.json", drawMap);
+d3.json("data/world_contitents.json", drawMap);
