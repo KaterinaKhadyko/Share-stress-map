@@ -38,15 +38,15 @@ function drawMap (data) {
 	var dataset = [
 		{
 			"id": 1,
-			"path": "data/dataset_1.json"
+			"path": "./data/dataset_1.json"
 		},
 		{
 			"id": 2,
-			"path": "data/dataset_2.json"
+			"path": "./data/dataset_2.json"
 		},
 		{
 			"id": 3,
-			"path": "data/dataset_3.json"
+			"path": "./data/dataset_3.json"
 		}
 	];	
 
@@ -112,7 +112,7 @@ function drawMap (data) {
 		.text("- share stress off");
 
 
-	d3.json("../data/dataset_1.json", drawBarCharts);
+	d3.json("./data/dataset_1.json", drawBarCharts);
 
 	function drawBarCharts (data) {
 		var shareStressValues = [];
