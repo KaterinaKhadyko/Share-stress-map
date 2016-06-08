@@ -111,8 +111,7 @@ function drawMap (data) {
 		.attr("y", 40)
 		.text("- share stress off");
 
-
-	d3.json("../data/dataset_1.json", drawBarCharts);
+	d3.json("data/dataset_1.json", drawBarCharts);
 
 	function drawBarCharts (data) {
 		var shareStressValues = [];
